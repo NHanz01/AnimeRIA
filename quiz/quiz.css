@@ -1,0 +1,64 @@
+
+body {
+  background-color: #bababa; /* Replace with your desired background color */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure body stretches to full viewport height */
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    margin: 10px auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .characterImage {
+    max-width: 200px;
+  }
+  
+  .score,
+  .timeRemaining,
+  .label {
+    margin: 10px auto;
+  }
+  
+  .correctIndicator {
+    color: lime;
+  }
+  
+  .label {
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  .buttonContainer {
+    display: grid;
+    grid-template-rows: 80px 80px;
+    grid-template-columns: 400px 400px;
+  }
+  
+  .button {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 8px;
+    margin: 2px;
+    font-size: larger;
+  }
+  
+  .button:hover {
+    text-decoration: underline;
+  }
+  
+  .revealAnswer {
+    width: 95%;
+    margin: auto;
+  }
+  
