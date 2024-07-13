@@ -1,4 +1,4 @@
-import useGetTopAnimes from 'useGetTopAnimes.js';
+import useGetTopAnimes from './useGetTopAnimes.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     // Declare variables used throughout the game
