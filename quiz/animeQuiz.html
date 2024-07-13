@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tooplate">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="quiz.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/owl-carousel.css">
+  <link rel="stylesheet" href="../assets/css/tooplate-artxibition.css">
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <title>Anime Game</title>
+  <style>
+    body {
+      background-image: url('../assets/images/ghibli.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .game-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 150px); /* Adjust based on your header and footer height */
+    }
+
+    .centered-container {
+      background-color: rgba(186, 186, 186, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container-fluid col-lg-10">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">Art<em>Xibition</em></a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rent-venue.html">Rent Venue</a></li>
+              <li><a href="animeQuiz.html" class="active">Anime Quiz</a></li> 
+              <li><a href="tickets.html">Tickets</a></li>
+            </ul>
+            <a class="menu-trigger d-lg-none" data-toggle="collapse" data-target="#collapseMenu">
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="game-wrapper">
+    <div class="centered-container">
+      <div class="container" id="loading"> 
+        <div class="preloader-inner" style="background-color:rgba(186, 186, 186, 0.8)">
+          <span class="dot"></span>
+          <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="game">
+        <div id="gamePlay" style="display: none;">
+          <img id="characterImage" src="" alt="Character Image">
+          <div id="scoreDisplay">Your Score: 0</div>
+          <div id="timeRemaining"></div>
+          <div id="buttonContainer"></div>
+          <div id="correctIndicator"></div>
+        </div>
+        <div id="gameOver" style="display: none;">
+          <div>Game Over!</div>
+          <img id="correctCharacterImage" src="" alt="Character Image">
+          <div>This character is <strong id="correctCharacterName"></strong> from <strong id="correctAnimeTitle"></strong></div>
+          <p>Your Score: <span id="score"></span></p>
+          <button id="playAgainButton" style="background-color: rgb(60, 10, 135); color: white; margin: 5px; border-radius: 20px; padding: 10px 20px; margin: 5px; transition: background-color 0.3s ease;">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- *** Footer *** -->
+  <footer style="background-color: #f8f9fa;">
+    <div class="container-fluid"> 
+      <div class="row">
+            <div class="col-lg-12">
+                <div class="sub-footer">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="logo"><span>Art<em>Xibition</em></span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="index.html" class="active">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="rent-venue.html">Rent Venue</a></li>
+                                    <li><a href="quiz/animeQuiz.html">Anime Quiz</a></li> 
+                                    <li><a href="tickets.html">Tickets</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="social-links">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and other scripts -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="useGetTopAnimes.js"></script>
+  <script type="module" src="animequiz.js"></script>
+</body>
+</html>
