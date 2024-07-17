@@ -27,6 +27,61 @@ Tooplate 2125 ArtXibition
 https://www.tooplate.com/view/2125-artxibition
 
 -->
+    <style>
+        .aboutContainer {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        }
+        .aboutContainer p{
+            color: white;
+            text-align: justify;
+            padding: 20px;
+        }
+        .aboutContainer h2{
+            color: white;
+            padding: 20px;
+        }
+        .aboutContainer ul{
+            color:white;
+            padding-left: 20px;
+            padding-top: 5px;
+            font-size: 14px;
+        }
+        .aboutContainer ul li{
+            margin: 5px;
+        }
+        /* Position the text container */
+        .hover-text {
+            position: absolute;
+            left: 50%;
+            bottom: 10%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        /* Style for the item */
+        .item {
+            position: relative;
+        }
+
+        /* Show the text on hover */
+        .item:hover .hover-text {
+            opacity: 1;
+        }
+    </style>
     </head>
     
     <body>
@@ -80,7 +135,7 @@ https://www.tooplate.com/view/2125-artxibition
                         <h6>Sharing the passion, one episode at a time.</h6>
                         <h2>Anime . Art . Connects</h2>
                         <div class="main-white-button">
-                            <a href="animeChar.html">Learn More</a>
+                            <a href="#aboutAnime">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -95,29 +150,25 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="row">
                 <div class="col-lg-12">
                     <div class="owl-show-events owl-carousel">
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-01.jpg" alt=""></a>
+                        <div class="item"> <!-- Anime Events -->
+                            <a href="#animeEvent"><img src="assets/images/show-event.png" alt=""></a>
+                            <div class="hover-text">Anime Events</div>
                         </div>
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-02.jpg" alt=""></a> 
+                        <div class="item"> <!-- Anime Character -->
+                            <a href="animeChar.html"><img src="assets/images/show-character.png" alt=""></a> 
+                            <div class="hover-text">Find Anime Character</div>
                         </div>
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-03.jpg" alt=""></a> 
+                        <div class="item"> <!-- Latest Anime -->
+                            <a href="latest.html"><img src="assets/images/show-anime.jpg" alt=""></a> 
+                            <div class="hover-text">Latest Anime</div>
                         </div>
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-04.jpg" alt=""></a> 
+                        <div class="item"> <!-- Anime Quiz -->
+                            <a href="animeQuiz.html"><img src="assets/images/show-quiz.png" alt=""></a> 
+                            <div class="hover-text">Anime Quiz</div>
                         </div>
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-01.jpg" alt=""></a> 
-                        </div>
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-02.jpg" alt=""></a> 
-                        </div>
-                        <div class="item">
-                            <a href="latest.html"><img src="assets/images/show-events-03.jpg" alt=""></a> 
-                        </div>
-                        <div class="item">
-                            <a href="latest.htmll"><img src="assets/images/show-events-04.jpg" alt=""></a> 
+                        <div class="item"> <!-- Anime Art -->
+                            <a href="art.html"><img src="assets/images/show-fanart.png" alt=""></a> 
+                            <div class="hover-text">Anime Art</div>
                         </div>
                     </div>
                 </div>
@@ -156,86 +207,132 @@ https://www.tooplate.com/view/2125-artxibition
         </div>
     </div>
 
-    <!-- *** Venues & Tickets ***-->
-    <div class="venue-tickets">
+    <!-- *** About Anime and ACG ***-->
+    <div class="w3-container" style="background-image: url(assets/images/about-city.jpg); width: 100%; padding:50px">
+        <div class="aboutContainer" id="aboutAnime">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>What is <b>Anime</b>?</h2>
+                    <p>
+                        Anime (アニメ) is a style of animation that originated in Japan and has become popular worldwide.
+                        It's usually based on Manga (Japanese Comics), and contains a wide range of genres and themes, often characterized 
+                        by colorful artwork, vibrant characters, and fantastical themes. Anime can be produced for television series, films, video games, and web series, and it 
+                        includes both hand-drawn and computer-generated animation. There are various Anime genres, but the common terms and target audience are:
+                        <ul>
+                            <li><b>1. Shojo/Shoujo (少女) </b>: Teen Girls (12-18 years old). Example: Sailor Moon, Fruits Basket.</li>
+                            <li><b>2. Shonen (少年) </b>: Teen boys (12-18 years old). Example: Naruto, One Piece.</li>
+                            <li><b>3. Seinen (青年)</b>: Adult Men. Includes Mature genres, such as psychological, gore, violence, action, erotic, etc.</li>
+                            <li><b>4. Josei (女性)</b>: Adult Women. Improvised version of Shoujo and shows the realistic lives of women, including their 
+                                relationships, challenges, and more. </li>
+                            <li><b>5. Kodomomuke (コドモムケ)</b>: For Children under 12 years old. Example: Pokemon, Doraemon.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <br><br><br><br>
+                    <img src="assets/images/about-anime.png" width="100%"><br>
+                    <p style="color: rgba(255, 255, 255, 0.513); text-align: center;">(Taken From Jujutsu Kaisen's Cursed Slash Game)</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="aboutContainer">
+            <div class="row">
+                <div class="col-lg-6"><br><br><br><br><br>
+                    <img src="assets/images/about-acg.jpg" width="100%">
+                </div>
+                <div class="col-lg-6">
+                    <h2>What is <b>ACG</b>?</h2>
+                    <p>
+                       ACG stands for "Anime, Comics, and Games," a popular East Asian subculture including Japanese animation, 
+                       manga, and video games. It includes fan activities like cosplay, fan art, and online communities, significantly 
+                       impacting pop culture and generating a multi-billion-dollar industry.
+                       <br><br>
+                       There are various ACG events held by both big companies and fan themselves. Even in Malaysia, there are different ACG
+                       events held anually by different organizers. ACG event is the place where fans or Otaku could gather around to share their
+                       same interests.
+                       <br><br>
+                       There are a lot of enjoyable activities could be done during ACG. Some would cosplay their favourite characters from an anime or video game.
+                       Some would find their favourite cosplayers or characters to take picture with. Some would come to enjoy the vibe. Some would come to buy the merchandises.
+                       Some would come to hangout with their friends. At the end of the day, it is about enjoying the same interests within the community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *** Malaysia's Anime Events ***-->
+    <div class="animeEvent" id="animeEvent">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Our Venues & Tickets</h2>
+                        <h2>Popular Anime Events in Malaysia!</h2>
                     </div>
                 </div>
+                <!-- *** ANIMANGAKI ***-->
                 <div class="col-lg-4">
                     <div class="venue-item">
                         <div class="thumb">
-                            <img src="assets/images/venue-01.jpg" alt="">
+                            <img src="assets/images/event-Animangaki.jpg" alt="">
                         </div>
                         <div class="down-content">
                             <div class="left-content">
                                 <div class="main-white-button">
-                                    <a href="ticket-details.html">Purchase Tickets</a>
+                                    <a href="https://www.animangaki.com/">Visit Website</a>
                                 </div>
                             </div>
                             <div class="right-content">
-                                <h4>Radio City Musical Hall</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur vinzi iscing elit, sed doers kontra.</p>
-                                <ul>
-                                    <li><i class="fa fa-sitemap"></i>250</li>
-                                    <li><i class="fa fa-user"></i>500</li>
-                                </ul>
-                                <div class="price">
-                                    <span>1 ticket<br>from <em>$45</em></span>
-                                </div>
+                                <h4>Animangaki</h4>
+                                <p style="text-align: justify;">
+                                    Debut in 2009, AniManGaki is one of Malaysia's largest annual animation, comics,
+                                    and games (ACG) conventions. Officially standing on its own branding starting 2012.
+                                </p>
                             </div> 
                         </div>
                     </div>
                 </div>
+                <!-- *** COMIC FIESTA ***-->
                 <div class="col-lg-4">
                     <div class="venue-item">
                         <div class="thumb">
-                            <img src="assets/images/venue-02.jpg" alt="">
+                            <img src="assets/images/event-ComicFiesta.jpg" alt="Comic Fiesta">
                         </div>
                         <div class="down-content">
                             <div class="left-content">
                                 <div class="main-white-button">
-                                    <a href="ticket-details.html">Purchase Tickets</a>
+                                    <a href="https://comicfiesta.org/">Visit Website</a>
                                 </div>
                             </div>
                             <div class="right-content">
-                                <h4>Madison Square Garden</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur vinzi iscing elit, sed doers kontra.</p>
-                                <ul>
-                                    <li><i class="fa fa-sitemap"></i>450</li>
-                                    <li><i class="fa fa-user"></i>650</li>
-                                </ul>
-                                <div class="price">
-                                    <span>1 ticket<br>from <em>$55</em></span>
-                                </div>
+                                <h4>Comic Fiesta</h4>
+                                <p style="text-align: justify;">
+                                   Founded in 2002, Comic Fiesta is one of the largest and longest running convention
+                                   event in Southeast-Asia that focuses on animation, comics and games (ACG). 
+                                </p>
                             </div> 
                         </div>
                     </div>
                 </div>
+                <!-- *** NIJIGEN ***-->
                 <div class="col-lg-4">
                     <div class="venue-item">
                         <div class="thumb">
-                            <img src="assets/images/venue-03.jpg" alt="">
+                            <img src="assets/images/event-Nijigen.jpg" alt="Nijigen Expo">
                         </div>
                         <div class="down-content">
                             <div class="left-content">
                                 <div class="main-white-button">
-                                    <a href="ticket-details.html">Purchase Tickets</a>
+                                    <a href="https://nijigenexpo.com/">Visit Website</a>
                                 </div>
                             </div>
                             <div class="right-content">
-                                <h4>Royce Hall</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur vinzi iscing elit, sed doers kontra.</p>
-                                <ul>
-                                    <li><i class="fa fa-sitemap"></i>450</li>
-                                    <li><i class="fa fa-user"></i>750</li>
-                                </ul>
-                                <div class="price">
-                                    <span>1 ticket<br>from <em>$65</em></span>
-                                </div>
+                                <h4>Nijigen</h4>
+                                <p style="text-align: justify;">
+                                    Nijigen Expo is an exhibition which provides all-in-one A.C.G (Anime, Comic and Games) experience to all the 
+                                    fans of anime culture nationwide and even worldwide.
+                                </p>
                             </div> 
                         </div>
                     </div>
@@ -244,62 +341,13 @@ https://www.tooplate.com/view/2125-artxibition
         </div>
     </div>
 
-
-    <!-- *** Coming Events ***-->
-    <div class="coming-events">
-        <div class="left-button">
-            <div class="main-white-button">
-                <a href="shows-events.html">Discover More</a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="event-item">
-                        <div class="thumb">
-                            <a href="event-details.html"><img src="assets/images/event-01.jpg" alt=""></a>
-                        </div>
-                        <div class="down-content">
-                            <a href="event-details.html"><h4>Radio City Musical Hall</h4></a>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> Tuesday: 15:30-19:30</li>
-                                <li><i class="fa fa-map-marker"></i> Copacabana Beach, Rio de Janeiro</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="event-item">
-                        <div class="thumb">
-                            <a href="event-details.html"><img src="assets/images/event-02.jpg" alt=""></a>
-                        </div>
-                        <div class="down-content">
-                            <a href="event-details.html"><h4>Madison Square Garden</h4></a>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> Wednesday: 08:00-14:00</li>
-                                <li><i class="fa fa-map-marker"></i> Copacabana Beach, Rio de Janeiro</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="event-item">
-                        <div class="thumb">
-                            <a href="event-details.html"><img src="assets/images/event-03.jpg" alt=""></a>
-                        </div>
-                        <div class="down-content">
-                            <a href="event-details.html"><h4>Royce Hall</h4></a>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> Thursday: 09:00-23:00</li>
-                                <li><i class="fa fa-map-marker"></i> Copacabana Beach, Rio de Janeiro</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- *** Malaysia's Anime Events Schedule ***-->
+    <div class="w3-container" style="background-image: url(assets/images/city.jpg); width: 100%; padding:50px">
+        <h2 style="color: white; text-align: center;">Malaysia's 2024 Anime Events Schedule
+        <br><br>
+        <img src="assets/images/anime-schedule.jpg" style="width:50%; text-align: center;">
+        </h2>
     </div>
-
   <!-- *** Footer *** -->
   <footer style="background-color: #f8f9fa;">
     <div class="container-fluid"> 
@@ -359,6 +407,24 @@ https://www.tooplate.com/view/2125-artxibition
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const anchors = document.querySelectorAll('a[href^="#"]');
+      
+        anchors.forEach(anchor => {
+          anchor.addEventListener('click', function (event) {
+            event.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

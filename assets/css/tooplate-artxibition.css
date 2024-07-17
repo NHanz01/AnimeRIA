@@ -772,15 +772,15 @@ Amazing Venues
 
 /*
 ---------------------------------------------
-Venues & Tickets
+Anime Events
 ---------------------------------------------
 */
 
-.venue-tickets {
+.animeEvent {
   margin: 0px 15px;
 }
 
-.venue-tickets .venue-item {
+.animeEvent .venue-item {
   margin-bottom: 23px;
 }
 
